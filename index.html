@@ -3,7 +3,7 @@
 <head>
     <!-- Standard Character Set -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
     <!-- Title and Description (Targeting US Market) -->
     <title>Architectural Drafting Services | Professional CAD & BIM Solutions</title>
@@ -45,8 +45,10 @@
     <!-- Apple & Theme Tags -->
     <meta name="apple-mobile-web-app-title" content="Precision Drafting">
     <meta name="theme-color" content="#05070a">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="https://www.cadservicesindia.com/favicon.ico">
+    
+    <!-- Favicon Implementation -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='5' y='5' width='90' height='90' stroke='%23ff9922' stroke-width='1.5' fill='none'/%3E%3Cpath d='M50 15L35 85' stroke='%23ff9922' stroke-width='4'/%3E%3Cpath d='M50 15L65 85' stroke='%23ff9922' stroke-width='4'/%3E%3Ccircle cx='50' cy='15' r='5' fill='%23ff9922'/%3E%3C/svg%3E">
 
     <!-- JSON-LD Schema Implementation -->
     <script type="application/ld+json">
@@ -59,7 +61,7 @@
       "telephone": "+1-000-000-0000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Your US Address",
+        "streetAddress": "Main Street",
         "addressLocality": "New York",
         "addressRegion": "NY",
         "postalCode": "10001",
@@ -72,19 +74,9 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/yourcompany"
-      ]
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00", "closes": "18:00"
+      }
     }
     </script>
 
@@ -103,13 +95,16 @@
         }
         body { font-family: 'Inter', sans-serif; background-color: var(--bg-deep); color: var(--text-main); overflow-x: hidden; }
         h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+        
         .blueprint-grid {
             background-image: linear-gradient(rgba(255, 153, 34, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 153, 34, 0.08) 1px, transparent 1px);
             background-size: 50px 50px;
             position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;
         }
         .blueprint-grid::after { content: ''; position: absolute; inset: 0; background-size: 10px 10px; background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+        
         .glass { background: rgba(5, 7, 10, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        
         .hero-bg-plan {
             position: absolute; top: 0; right: 0; width: 100%; height: 100%;
             background-image: url('https://www.cadservicesindia.com/images/drafting-services/archicad/archicad10.webp');
@@ -118,17 +113,30 @@
             mask-image: radial-gradient(circle at 30% 50%, transparent 10%, black 90%);
             -webkit-mask-image: radial-gradient(circle at 30% 50%, transparent 10%, black 90%);
         }
-        .hero-title-main { font-weight: 900; line-height: 1; letter-spacing: -3px; font-size: clamp(3rem, 8vw, 7rem); color: #ffffff; text-transform: uppercase; }
-        .hero-title-outline { font-weight: 900; line-height: 0.9; letter-spacing: -2px; font-size: clamp(2.5rem, 7vw, 6rem); color: transparent; -webkit-text-stroke: 1.5px var(--accent); text-transform: uppercase; margin-top: -5px; }
-        .mission-block { border-left: 4px solid var(--accent); padding-left: 1.5rem; margin-top: 2.5rem; max-width: 42rem; background: linear-gradient(90deg, rgba(255, 153, 34, 0.05) 0%, transparent 100%); padding-top: 1rem; padding-bottom: 1rem; }
+        
+        .hero-title-main { font-weight: 900; line-height: 1; letter-spacing: -3px; font-size: clamp(2.5rem, 8vw, 7rem); color: #ffffff; text-transform: uppercase; }
+        .hero-title-outline { font-weight: 900; line-height: 0.9; letter-spacing: -2px; font-size: clamp(2.2rem, 7vw, 6rem); color: transparent; -webkit-text-stroke: 1.5px var(--accent); text-transform: uppercase; margin-top: -5px; }
+        
+        .mission-block { border-left: 4px solid var(--accent); padding-left: 1.5rem; margin-top: 2rem; max-width: 42rem; background: linear-gradient(90deg, rgba(255, 153, 34, 0.05) 0%, transparent 100%); padding-top: 1rem; padding-bottom: 1rem; }
+        
+        /* Mobile Responsive Slider */
         .slider-container-centered { position: relative; width: 100%; max-width: 1200px; aspect-ratio: 16/9; margin: 0 auto; background: #fff; overflow: hidden; border: 1px solid rgba(255, 153, 34, 0.2); cursor: ew-resize; border-radius: 8px; box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5); }
+        @media (max-width: 768px) { .slider-container-centered { aspect-ratio: 4/3; } }
+        
         .layer-2d { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.cadservicesindia.com/images/drafting-services/archicad/archicad10.webp'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #ffffff; filter: contrast(1.05); }
         .layer-3d { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.cadservicesindia.com/images/3d-rendering/3d-r15.webp'); background-size: cover; background-position: center; clip-path: inset(0 0 0 100%); transition: clip-path 0.1s linear; }
+        
         .slider-line { position: absolute; top: 0; bottom: 0; left: 100%; width: 4px; background: var(--accent); box-shadow: 0 0 30px var(--accent-glow); z-index: 10; }
-        .slider-handle { position: absolute; top: 50%; left: 100%; transform: translate(-50%, -50%); width: 54px; height: 54px; background: var(--accent); border-radius: 50%; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.8); border: 4px solid var(--bg-deep); color: #000; font-size: 20px; }
-        .label-classic { padding: 12px 24px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; background: white; color: black; border-bottom: 4px solid var(--accent); }
+        .slider-handle { position: absolute; top: 50%; left: 100%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: var(--accent); border-radius: 50%; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.8); border: 4px solid var(--bg-deep); color: #000; font-size: 16px; }
+        
+        .label-classic { padding: 8px 16px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; background: white; color: black; border-bottom: 4px solid var(--accent); white-space: nowrap; }
+        @media (max-width: 480px) { .label-classic { padding: 4px 8px; font-size: 8px; } }
+        
         .service-card { transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); border: 1px solid rgba(255, 255, 255, 0.05); }
         .service-card:hover { background: rgba(255, 153, 34, 0.05); border-color: var(--accent); transform: translateY(-5px); }
+
+        .logo-box { width: 45px; height: 45px; transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .logo-box:hover { transform: rotate(180deg); }
     </style>
 </head>
 <body>
@@ -136,10 +144,10 @@
     <div class="blueprint-grid" role="presentation"></div>
 
     <!-- Navigation -->
-    <nav class="absolute w-full z-50 py-5 px-8 md:px-16 flex justify-between items-center glass">
+    <nav class="fixed md:absolute w-full z-50 py-4 md:py-5 px-6 md:px-16 flex justify-between items-center glass">
         <div class="flex items-center">
             <div class="logo-box" aria-label="Precision Systems Logo">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="45" height="45">
                     <rect x="5" y="5" width="90" height="90" stroke="#ff9922" stroke-width="1.5" opacity="0.4"/>
                     <path d="M50 15L35 85" stroke="#ff9922" stroke-width="4" stroke-linecap="round"/>
                     <path d="M50 15L65 85" stroke="#ff9922" stroke-width="4" stroke-linecap="round"/>
@@ -155,34 +163,39 @@
             <a href="#services" title="Our Professional Services" class="hover:text-[#ff9922] transition-colors">Services</a>
             <a href="#process" title="Our Process Evolution" class="hover:text-[#ff9922] transition-colors">Evolution</a>
         </div>
-        <div class="w-10"></div> 
+        
+        <!-- Mobile Simple Menu Icon for responsiveness -->
+        <div class="lg:hidden text-[#ff9922]">
+            <i class="fas fa-bars text-xl"></i>
+        </div>
     </nav>
 
-    <!-- Hero Section (One H1 for SEO) -->
-    <section id="home" class="min-h-screen flex items-center px-8 md:px-16 pt-32 relative overflow-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center px-6 md:px-16 pt-32 pb-16 relative overflow-hidden">
         <div class="hero-bg-plan" role="img" aria-label="Technical floor plan background"></div>
 
         <div class="max-w-screen-2xl mx-auto w-full relative z-10">
             <div class="max-w-5xl">
                 <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase mb-4 text-xs md:text-sm">Global Outsourcing Partner</p>
                 
-                <h1 class="hero-title-main">Architectural <br><span class="hero-title-outline" style="display: block;">Drafting Services</span></h1>
+                <h1 class="hero-title-main">Architectural</h1>
+                <div class="hero-title-outline">Drafting Services</div>
                 
                 <div class="mission-block">
-                    <p class="text-white text-xl md:text-2xl font-bold leading-tight drop-shadow-lg">
+                    <p class="text-white text-lg md:text-2xl font-bold leading-tight drop-shadow-lg">
                         Precise and Standardized Solutions.
                     </p>
-                    <p class="text-slate-300 text-lg md:text-xl font-light mt-3 leading-relaxed">
+                    <p class="text-slate-300 text-base md:text-xl font-light mt-3 leading-relaxed">
                         Engineering the silent foundations of architecture. We provide world-class 
                         <a href="https://www.cadservicesindia.com/drafting-services.php" title="Learn more about CAD drafting services" class="text-[#ff9922] hover:brightness-110 transition-all font-medium">CAD drafting services</a>, 
                         BIM modeling, and technical documentation with surgical accuracy.
                     </p>
                 </div>
 
-                <div class="mt-12 flex items-center gap-6">
+                <div class="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-6">
                     <div class="flex items-center gap-4 text-slate-400">
                         <span class="h-[1px] w-12 bg-[#ff9922]"></span>
-                        <span class="text-xs uppercase tracking-widest font-black">Trusted by Global AEC Firms</span>
+                        <span class="text-[10px] md:text-xs uppercase tracking-widest font-black">Trusted by Global AEC Firms</span>
                     </div>
                 </div>
             </div>
@@ -190,57 +203,57 @@
     </section>
 
     <!-- Core Drafting Services Section -->
-    <section id="services" class="py-32 px-8 md:px-16">
+    <section id="services" class="py-24 md:py-32 px-6 md:px-16">
         <div class="max-w-screen-2xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8">
                 <div>
-                    <h2 class="text-5xl font-bold font-heading mb-4">Core Dimensions</h2>
-                    <p class="text-slate-500 max-w-md mx-auto md:mx-0">Fundamental pillars of our architectural documentation and technical delivery process.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold font-heading mb-4">Core Dimensions</h2>
+                    <p class="text-slate-500 max-w-md">Fundamental pillars of our architectural documentation and technical delivery process.</p>
                 </div>
-                <div class="text-8xl font-black text-white/5 font-heading hidden md:block" aria-hidden="true">01-03</div>
+                <div class="text-6xl md:text-8xl font-black text-white/5 font-heading hidden sm:block" aria-hidden="true">01-03</div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-1">
-                <article class="service-card glass p-12">
-                    <div class="mb-12 text-[#ff9922]">
-                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-1">
+                <article class="service-card glass p-8 md:p-12">
+                    <div class="mb-10 text-[#ff9922]">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">Construction Documentation</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Developing full CD sets standardized for local building codes and site-ready execution.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 font-heading">Construction Documentation</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Developing full CD sets standardized for local building codes and site-ready execution.</p>
                 </article>
 
-                <article class="service-card glass p-12">
-                    <div class="mb-12 text-[#ff9922]">
-                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <article class="service-card glass p-8 md:p-12">
+                    <div class="mb-10 text-[#ff9922]">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">BIM & Intelligence Modeling</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Creating data-rich Revit models ensuring spatial coordination and material accuracy.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 font-heading">BIM & Intelligence Modeling</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Creating data-rich Revit models ensuring spatial coordination and material accuracy.</p>
                 </article>
 
-                <article class="service-card glass p-12">
-                    <div class="mb-12 text-[#ff9922]">
-                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <article class="service-card glass p-8 md:p-12">
+                    <div class="mb-10 text-[#ff9922]">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">Detailing & Shop Drawings</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Surgical precision in structural detailing optimized for manufacturing workflows.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 font-heading">Detailing & Shop Drawings</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Surgical precision in structural detailing optimized for manufacturing workflows.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Evolution Section -->
-    <section id="process" class="py-32 px-8 md:px-16 bg-white text-black">
+    <!-- Evolution Section (Centered Layout) -->
+    <section id="process" class="py-24 md:py-32 px-6 md:px-16 bg-white text-black">
         <div class="max-w-screen-2xl mx-auto">
             <div class="process-header">
-                <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase text-sm mb-4">Dimensional Synergy</p>
-                <h2 class="text-5xl md:text-7xl font-black font-heading leading-tight mb-8">2D PLANS TO 3D REALITY</h2>
-                <p class="text-slate-600 text-lg md:text-xl leading-relaxed">Swipe across the interface to experience our technical conversion process.</p>
+                <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase text-xs md:text-sm mb-4">Dimensional Synergy</p>
+                <h2 class="text-4xl md:text-7xl font-black font-heading leading-tight mb-8">2D PLANS TO 3D REALITY</h2>
+                <p class="text-slate-600 text-base md:text-xl leading-relaxed">Swipe across the interface to experience our technical conversion process.</p>
             </div>
 
             <div class="slider-container-centered" id="pivotSlider">
@@ -250,38 +263,55 @@
                 <div class="slider-handle" id="sliderHandle">
                     <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
                 </div>
+                
                 <div class="label-wrap" style="top:20px; left:20px;"><div class="label-classic">BLUEPRINT: 2D PLAN</div></div>
                 <div class="label-wrap" style="top:20px; right:20px;"><div class="label-classic" style="background:#ff9922; border-bottom:4px solid black;">MODEL: 3D REALITY</div></div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto text-center border-t border-slate-100 pt-16">
-                <div><div class="text-3xl font-black text-[#ff9922]">1:1</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Scale Precision</div></div>
-                <div><div class="text-3xl font-black text-[#ff9922]">FIXED</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Geometry</div></div>
-                <div><div class="text-3xl font-black text-[#ff9922]">ISO</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Standardized</div></div>
-                <div><div class="text-3xl font-black text-[#ff9922]">0%</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Data Loss</div></div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 md:mt-20 max-w-4xl mx-auto text-center border-t border-slate-100 pt-12 md:pt-16">
+                <div><div class="text-2xl md:text-3xl font-black text-[#ff9922]">1:1</div><div class="text-[8px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400">Scale Precision</div></div>
+                <div><div class="text-2xl md:text-3xl font-black text-[#ff9922]">FIXED</div><div class="text-[8px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400">Geometry</div></div>
+                <div><div class="text-2xl md:text-3xl font-black text-[#ff9922]">ISO</div><div class="text-[8px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400">Standardized</div></div>
+                <div><div class="text-2xl md:text-3xl font-black text-[#ff9922]">0%</div><div class="text-[8px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400">Data Loss</div></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-24 px-8 md:px-16 border-t border-white/5 bg-black/40 text-center">
+    <footer class="py-20 md:py-24 px-6 md:px-16 border-t border-white/5 bg-black/40 text-center">
         <div class="max-w-screen-2xl mx-auto">
             <div class="inline-block mb-10" aria-hidden="true">
+                <!-- SVG Logo Added to Footer -->
                 <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="90" height="90" stroke="#ff9922" stroke-width="1.5" opacity="0.4"/>
                     <path d="M50 15L35 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
                     <path d="M50 15L65 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
                     <circle cx="50" cy="15" r="7" fill="#ff9922"/>
+                    <path d="M38 70C38 70 45 68 50 68C55 68 62 70 62 70" stroke="#ff9922" stroke-width="3"/>
                 </svg>
             </div>
-            <div class="text-slate-600 text-[10px] uppercase tracking-[0.5em] font-bold mb-4">© 2024 PRECISION SYSTEMS INC // ARCHITECTURAL DRAFTING SPECIALISTS</div>
-            <div class="text-slate-700 text-xs tracking-[0.2em] uppercase font-medium">Established 2008 • Global AEC Outsourcing Partner</div>
+            <div class="text-slate-600 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-4">© 2024 PRECISION SYSTEMS INC // ARCHITECTURAL DRAFTING SPECIALISTS</div>
+            <div class="text-slate-700 text-[10px] md:text-xs tracking-[0.2em] uppercase font-medium">Established 2008 • Global AEC Outsourcing Partner</div>
         </div>
     </footer>
 
     <script>
-        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('opacity-100'); entry.target.classList.remove('translate-y-10'); } }); }, { threshold: 0.1 });
-        document.querySelectorAll('section').forEach(section => { section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10'); observer.observe(section); });
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
 
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Interactive RTL Swipe Slider Logic
         const slider = document.getElementById('pivotSlider');
         const layer3d = document.getElementById('layer3d');
         const line = document.getElementById('sliderLine');
@@ -289,21 +319,47 @@
 
         const updateSwipe = (e) => {
             const rect = slider.getBoundingClientRect();
-            let x = e.clientX ? e.clientX - rect.left : (e.touches ? e.touches[0].clientX - rect.left : 0);
+            let x = 0;
+            
+            if (e.clientX) {
+                x = e.clientX - rect.left;
+            } else if (e.touches && e.touches[0]) {
+                x = e.touches[0].clientX - rect.left;
+            } else {
+                return;
+            }
+            
             x = Math.max(0, Math.min(x, rect.width));
             const percentage = (x / rect.width) * 100;
+            
+            // RTL Reveal: Clip inset (top right bottom left)
             layer3d.style.clipPath = `inset(0 0 0 ${percentage}%)`;
             line.style.left = `${percentage}%`;
             handle.style.left = `${percentage}%`;
         };
 
+        // Event listeners for both Mouse and Touch
         slider.addEventListener('mousemove', updateSwipe);
         slider.addEventListener('touchmove', updateSwipe, { passive: true });
+        
         window.addEventListener('load', () => { 
             const rect = slider.getBoundingClientRect();
             updateSwipe({ clientX: rect.left + (rect.width * 0.5) }); 
         });
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) target.scrollIntoView({ behavior: 'smooth' }); }); });
+
+        // Smooth scrolling for navigation anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
