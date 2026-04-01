@@ -1,192 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
+    <!-- Standard Character Set -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architectural Drafting | Precision Reimagined</title>
+    
+    <!-- Title and Description (Targeting US Market) -->
+    <title>Architectural Drafting Services | Professional CAD & BIM Solutions</title>
+    <meta name="description" content="Leading architectural drafting services in the US. Specializing in high-precision CAD drafting, BIM modeling, and technical construction documentation with 1:1 scale accuracy.">
+    <meta name="keywords" content="architectural drafting services, CAD drafting US, BIM modeling solutions, construction documentation, residential drafting, commercial drafting">
+    
+    <!-- Robots Tag -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical and Hreflang -->
+    <link rel="canonical" href="https://yourdomain.com/">
+    <link rel="alternate" hreflang="en-US" href="https://yourdomain.com/">
+
+    <!-- Necessary DNS-Prefetch and Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Biggest Viewport Image Preload (LCP Optimization) -->
+    <link rel="preload" as="image" href="https://www.cadservicesindia.com/images/drafting-services/archicad/archicad10.webp" fetchpriority="high">
+
+    <!-- OpenGraph Tags (OG Tags) -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Architectural Drafting Services | Professional CAD & BIM Solutions">
+    <meta property="og:description" content="Professional CAD drafting and BIM modeling services optimized for global engineering standards.">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:site_name" content="Precision Systems Inc">
+    <meta property="og:image" content="https://www.cadservicesindia.com/images/3d-rendering/3d-r15.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Architectural Drafting Services | Precise BIM Modeling">
+    <meta name="twitter:description" content="Surgical precision in CAD drafting and technical documentation.">
+
+    <!-- Apple & Theme Tags -->
+    <meta name="apple-mobile-web-app-title" content="Precision Drafting">
+    <meta name="theme-color" content="#05070a">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- JSON-LD Schema Implementation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Precision Systems Inc",
+      "image": "https://www.cadservicesindia.com/images/3d-rendering/3d-r15.webp",
+      "url": "https://yourdomain.com/",
+      "telephone": "+1-000-000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your US Address",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/yourcompany"
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700;900&family=Outfit:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700;900&family=Outfit:wght@100;400;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --bg-deep: #05070a;
             --bg-card: #0f172a;
-            --accent: #ff9922; /* Brand Orange */
+            --accent: #ff9922;
             --accent-glow: rgba(255, 153, 34, 0.3);
             --text-main: #f8fafc;
             --text-dim: #94a3b8;
         }
-
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--bg-deep);
-            color: var(--text-main);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, .font-heading {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        /* Technical Grid Background */
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-deep); color: var(--text-main); overflow-x: hidden; }
+        h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
         .blueprint-grid {
-            background-image: 
-                linear-gradient(rgba(255, 153, 34, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 153, 34, 0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            pointer-events: none;
+            background-image: linear-gradient(rgba(255, 153, 34, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 153, 34, 0.08) 1px, transparent 1px);
+            background-size: 50px 50px;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;
         }
-
-        .glass {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .btn-brand {
-            background: var(--accent);
-            color: var(--bg-deep);
-            padding: 14px 32px;
-            font-weight: 700;
-            border-radius: 2px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-brand:hover {
-            box-shadow: 0 0 30px var(--accent-glow);
-            transform: translateY(-2px);
-            filter: brightness(1.1);
-        }
-
-        .service-card {
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            position: relative;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .service-card:hover {
-            background: rgba(255, 153, 34, 0.05);
-            border-color: var(--accent);
-            transform: scale(1.02);
-        }
-
-        .hero-title {
-            font-weight: 900;
-            line-height: 0.9;
-            letter-spacing: -2px;
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg-deep); }
-        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
-        
-        /* Classic Logo Animation */
-        .logo-box {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-            cursor: pointer;
-        }
-        
-        .logo-box:hover, .logo-box:active {
-            transform: rotate(180deg);
-        }
-
-        /* Image Evolution Slider Styling */
-        .slider-container {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16/9;
-            background: #fff;
-            overflow: hidden;
-            border: 1px solid rgba(255, 153, 34, 0.2);
-            cursor: ew-resize;
-            border-radius: 4px;
-        }
-
-        .layer-2d {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+        .blueprint-grid::after { content: ''; position: absolute; inset: 0; background-size: 10px 10px; background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+        .glass { background: rgba(5, 7, 10, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-bg-plan {
+            position: absolute; top: 0; right: 0; width: 100%; height: 100%;
             background-image: url('https://www.cadservicesindia.com/images/drafting-services/archicad/archicad10.webp');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #ffffff;
-            filter: contrast(1.05);
+            background-size: cover; background-repeat: no-repeat; background-position: center;
+            opacity: 0.4; filter: invert(1) contrast(1.8) brightness(0.7); pointer-events: none; z-index: 0;
+            mask-image: radial-gradient(circle at 30% 50%, transparent 10%, black 90%);
+            -webkit-mask-image: radial-gradient(circle at 30% 50%, transparent 10%, black 90%);
         }
-
-        .layer-3d {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://www.cadservicesindia.com/images/3d-rendering/3d-r15.webp');
-            background-size: cover;
-            background-position: center;
-            clip-path: inset(0 0 0 100%);
-            transition: clip-path 0.1s linear;
-        }
-
-        .slider-line {
-            position: absolute;
-            top: 0; bottom: 0;
-            left: 100%;
-            width: 3px;
-            background: var(--accent);
-            box-shadow: 0 0 20px var(--accent-glow);
-            z-index: 10;
-            pointer-events: none;
-        }
-
-        .slider-handle {
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            transform: translate(-50%, -50%);
-            width: 48px;
-            height: 48px;
-            background: var(--accent);
-            border-radius: 50%;
-            z-index: 11;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 25px rgba(0,0,0,0.5);
-            pointer-events: none;
-            border: 4px solid var(--bg-deep);
-        }
-
-        .label-tag {
-            position: absolute;
-            padding: 10px 20px;
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            z-index: 20;
-            background: rgba(255, 255, 255, 0.9);
-            color: #000;
-            top: 0;
-        }
+        .hero-title-main { font-weight: 900; line-height: 1; letter-spacing: -3px; font-size: clamp(3rem, 8vw, 7rem); color: #ffffff; text-transform: uppercase; }
+        .hero-title-outline { font-weight: 900; line-height: 0.9; letter-spacing: -2px; font-size: clamp(2.5rem, 7vw, 6rem); color: transparent; -webkit-text-stroke: 1.5px var(--accent); text-transform: uppercase; margin-top: -5px; }
+        .mission-block { border-left: 4px solid var(--accent); padding-left: 1.5rem; margin-top: 2.5rem; max-width: 42rem; background: linear-gradient(90deg, rgba(255, 153, 34, 0.05) 0%, transparent 100%); padding-top: 1rem; padding-bottom: 1rem; }
+        .slider-container-centered { position: relative; width: 100%; max-width: 1200px; aspect-ratio: 16/9; margin: 0 auto; background: #fff; overflow: hidden; border: 1px solid rgba(255, 153, 34, 0.2); cursor: ew-resize; border-radius: 8px; box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5); }
+        .layer-2d { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.cadservicesindia.com/images/drafting-services/archicad/archicad10.webp'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #ffffff; filter: contrast(1.05); }
+        .layer-3d { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.cadservicesindia.com/images/3d-rendering/3d-r15.webp'); background-size: cover; background-position: center; clip-path: inset(0 0 0 100%); transition: clip-path 0.1s linear; }
+        .slider-line { position: absolute; top: 0; bottom: 0; left: 100%; width: 4px; background: var(--accent); box-shadow: 0 0 30px var(--accent-glow); z-index: 10; }
+        .slider-handle { position: absolute; top: 50%; left: 100%; transform: translate(-50%, -50%); width: 54px; height: 54px; background: var(--accent); border-radius: 50%; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.8); border: 4px solid var(--bg-deep); color: #000; font-size: 20px; }
+        .label-classic { padding: 12px 24px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; background: white; color: black; border-bottom: 4px solid var(--accent); }
+        .service-card { transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .service-card:hover { background: rgba(255, 153, 34, 0.05); border-color: var(--accent); transform: translateY(-5px); }
     </style>
 </head>
 <body>
 
-    <div class="blueprint-grid"></div>
+    <div class="blueprint-grid" role="presentation"></div>
 
     <!-- Navigation -->
-    <nav class="absolute w-full z-50 py-4 px-8 md:px-16 flex justify-between items-center glass">
+    <nav class="absolute w-full z-50 py-5 px-8 md:px-16 flex justify-between items-center glass">
         <div class="flex items-center">
-            <div class="logo-box">
+            <div class="logo-box" aria-label="Precision Systems Logo">
                 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="5" y="5" width="90" height="90" stroke="#ff9922" stroke-width="1.5" opacity="0.4"/>
                     <path d="M50 15L35 85" stroke="#ff9922" stroke-width="4" stroke-linecap="round"/>
@@ -198,165 +150,138 @@
             </div>
         </div>
         
-        <div class="hidden lg:flex gap-12 text-sm font-medium uppercase tracking-[0.4em] text-slate-400">
-            <a href="#home" class="hover:text-[#ff9922] transition-colors">Surface</a>
-            <a href="#services" class="hover:text-[#ff9922] transition-colors">Dimensions</a>
-            <a href="#process" class="hover:text-[#ff9922] transition-colors">Evolution</a>
+        <div class="hidden lg:flex gap-12 text-sm font-bold uppercase tracking-[0.4em] text-slate-400">
+            <a href="#home" title="Go to Home" class="hover:text-[#ff9922] transition-colors">Surface</a>
+            <a href="#services" title="Our Professional Services" class="hover:text-[#ff9922] transition-colors">Services</a>
+            <a href="#process" title="Our Process Evolution" class="hover:text-[#ff9922] transition-colors">Evolution</a>
         </div>
         <div class="w-10"></div> 
     </nav>
 
-    <!-- Hero -->
-    <section id="home" class="min-h-screen flex items-center px-8 md:px-16 pt-32">
-        <div class="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-8 z-10">
-                <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase mb-4 text-sm">Beyond Blueprints</p>
-                <h1 class="hero-title text-6xl md:text-[120px] mb-8">
-                    TECHNICAL <br> <span class="text-transparent" style="-webkit-text-stroke: 1px #ff9922;">PRECISION</span>
-                </h1>
-                <p class="text-slate-400 text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
-                    Engineering the silent foundations of architecture. We provide world-class CAD drafting, BIM modeling, and technical documentation with surgical accuracy.
-                </p>
-                <div class="flex flex-wrap gap-6">
-                    <a href="#services" class="btn-brand">View Specs</a>
-                    <div class="flex items-center gap-4 text-slate-500">
-                        <span class="h-[1px] w-12 bg-slate-700"></span>
-                        <span class="text-xs uppercase tracking-widest font-bold">Trusted by Global Firms</span>
-                    </div>
+    <!-- Hero Section (One H1 for SEO) -->
+    <section id="home" class="min-h-screen flex items-center px-8 md:px-16 pt-32 relative overflow-hidden">
+        <div class="hero-bg-plan" role="img" aria-label="Technical floor plan background"></div>
+
+        <div class="max-w-screen-2xl mx-auto w-full relative z-10">
+            <div class="max-w-5xl">
+                <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase mb-4 text-xs md:text-sm">Global Outsourcing Partner</p>
+                
+                <h1 class="hero-title-main">Architectural <br><span class="hero-title-outline" style="display: block;">Drafting Services</span></h1>
+                
+                <div class="mission-block">
+                    <p class="text-white text-xl md:text-2xl font-bold leading-tight drop-shadow-lg">
+                        Precise and Standardized Solutions.
+                    </p>
+                    <p class="text-slate-300 text-lg md:text-xl font-light mt-3 leading-relaxed">
+                        Engineering the silent foundations of architecture. We provide world-class 
+                        <a href="https://www.cadservicesindia.com/drafting-services.php" title="Learn more about CAD drafting services" class="text-[#ff9922] hover:brightness-110 transition-all font-medium">CAD drafting services</a>, 
+                        BIM modeling, and technical documentation with surgical accuracy.
+                    </p>
                 </div>
-            </div>
-            <div class="lg:col-span-4 relative hidden lg:block">
-                <div class="aspect-[4/5] bg-slate-800 overflow-hidden relative shadow-[0_0_50px_rgba(255,153,34,0.1)]">
-                    <img src="https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1200" 
-                         alt="Architectural Detail" 
-                         class="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-1000">
-                    <div class="absolute inset-0 border-[20px] border-bg-deep m-4 pointer-events-none"></div>
+
+                <div class="mt-12 flex items-center gap-6">
+                    <div class="flex items-center gap-4 text-slate-400">
+                        <span class="h-[1px] w-12 bg-[#ff9922]"></span>
+                        <span class="text-xs uppercase tracking-widest font-black">Trusted by Global AEC Firms</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Core Drafting Services Section -->
     <section id="services" class="py-32 px-8 md:px-16">
         <div class="max-w-screen-2xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8 text-center md:text-left">
                 <div>
                     <h2 class="text-5xl font-bold font-heading mb-4">Core Dimensions</h2>
-                    <p class="text-slate-500 max-w-md">Detailed technical output across all architectural stages, optimized for construction readiness.</p>
+                    <p class="text-slate-500 max-w-md mx-auto md:mx-0">Fundamental pillars of our architectural documentation and technical delivery process.</p>
                 </div>
-                <div class="text-8xl font-black text-white/5 font-heading hidden md:block">01-03</div>
+                <div class="text-8xl font-black text-white/5 font-heading hidden md:block" aria-hidden="true">01-03</div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-1">
-                <div class="service-card glass p-12">
-                    <div class="mb-12">
-                        <svg class="w-12 h-12 text-[#ff9922]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <article class="service-card glass p-12">
+                    <div class="mb-12 text-[#ff9922]">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 font-heading">Construction Documentation</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Developing full CD sets standardized for local building codes and site-ready execution.</p>
+                </article>
+
+                <article class="service-card glass p-12">
+                    <div class="mb-12 text-[#ff9922]">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">2D Drafting</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">High-fidelity floor plans, elevations, and sections. Every line calibrated to construction tolerances.</p>
-                </div>
+                    <h3 class="text-2xl font-bold mb-6 font-heading">BIM & Intelligence Modeling</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Creating data-rich Revit models ensuring spatial coordination and material accuracy.</p>
+                </article>
 
-                <div class="service-card glass p-12">
-                    <div class="mb-12">
-                        <svg class="w-12 h-12 text-[#ff9922]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                <article class="service-card glass p-12">
+                    <div class="mb-12 text-[#ff9922]">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">BIM Solutions</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Intelligence-driven 3D modeling using Revit. We build digital twins that foresee clashes before they happen.</p>
-                </div>
-
-                <div class="service-card glass p-12">
-                    <div class="mb-12">
-                        <svg class="w-12 h-12 text-[#ff9922]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-6 font-heading">Shop Drawings</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Fabrication-ready drawings for millwork, structural steel, and MEP systems with component-level detail.</p>
-                </div>
+                    <h3 class="text-2xl font-bold mb-6 font-heading">Detailing & Shop Drawings</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Surgical precision in structural detailing optimized for manufacturing workflows.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Evolution: 2D to 3D Swipe Section -->
-    <section id="process" class="py-32 px-8 md:px-16 bg-white text-black overflow-hidden">
+    <!-- Evolution Section -->
+    <section id="process" class="py-32 px-8 md:px-16 bg-white text-black">
         <div class="max-w-screen-2xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="slider-container shadow-2xl" id="pivotSlider">
-                        <div class="layer-2d"></div>
-                        <div class="layer-3d" id="layer3d"></div>
-                        <div class="slider-line" id="sliderLine"></div>
-                        <div class="slider-handle" id="sliderHandle">
-                            <i class="fas fa-arrows-alt-h text-bg-deep text-lg"></i>
-                        </div>
-                        <div class="label-tag left-0 border-b-2 border-[#ff9922]">Blueprint: 2D Plan</div>
-                        <div class="label-tag right-0 !bg-[#ff9922] border-b-2 border-black">Model: 3D Reality</div>
-                    </div>
+            <div class="process-header">
+                <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase text-sm mb-4">Dimensional Synergy</p>
+                <h2 class="text-5xl md:text-7xl font-black font-heading leading-tight mb-8">2D PLANS TO 3D REALITY</h2>
+                <p class="text-slate-600 text-lg md:text-xl leading-relaxed">Swipe across the interface to experience our technical conversion process.</p>
+            </div>
+
+            <div class="slider-container-centered" id="pivotSlider">
+                <div class="layer-2d"></div>
+                <div class="layer-3d" id="layer3d"></div>
+                <div class="slider-line" id="sliderLine"></div>
+                <div class="slider-handle" id="sliderHandle">
+                    <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
                 </div>
-                <div class="order-1 lg:order-2 space-y-8">
-                    <p class="text-[#ff9922] font-bold tracking-[0.3em] uppercase text-sm">Dimensional Synergy</p>
-                    <h2 class="text-6xl font-black font-heading leading-none">2D PLANS TO <br>3D MODELS.</h2>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Swipe from right to left to see our technical conversion process. We take clean architectural drafts and project them into high-fidelity 3D environments, ensuring every structural detail is construction-ready.
-                    </p>
-                    <div class="flex items-center gap-6 pt-4">
-                        <div class="text-center px-8 border-r border-slate-200">
-                            <div class="text-3xl font-black text-[#ff9922]">1:1</div>
-                            <div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Scale Match</div>
-                        </div>
-                        <div class="text-center px-8">
-                            <div class="text-3xl font-black text-[#ff9922]">FIXED</div>
-                            <div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Geometry</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="label-wrap" style="top:20px; left:20px;"><div class="label-classic">BLUEPRINT: 2D PLAN</div></div>
+                <div class="label-wrap" style="top:20px; right:20px;"><div class="label-classic" style="background:#ff9922; border-bottom:4px solid black;">MODEL: 3D REALITY</div></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto text-center border-t border-slate-100 pt-16">
+                <div><div class="text-3xl font-black text-[#ff9922]">1:1</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Scale Precision</div></div>
+                <div><div class="text-3xl font-black text-[#ff9922]">FIXED</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Geometry</div></div>
+                <div><div class="text-3xl font-black text-[#ff9922]">ISO</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Standardized</div></div>
+                <div><div class="text-3xl font-black text-[#ff9922]">0%</div><div class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Data Loss</div></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-16 px-8 md:px-16 border-t border-white/5 bg-black/40">
-        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-            <div class="flex items-center">
-                <div class="w-10 h-10">
-                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50 15L35 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
-                        <path d="M50 15L65 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
-                        <circle cx="50" cy="15" r="7" fill="#ff9922"/>
-                    </svg>
-                </div>
+    <footer class="py-24 px-8 md:px-16 border-t border-white/5 bg-black/40 text-center">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="inline-block mb-10" aria-hidden="true">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 15L35 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M50 15L65 85" stroke="#ff9922" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="50" cy="15" r="7" fill="#ff9922"/>
+                </svg>
             </div>
-            
-            <div class="text-slate-600 text-[10px] uppercase tracking-[0.4em] font-bold text-center">
-                © 2024 PRECISION SYSTEMS INC // ARCHITECTURAL DRAFTING SPECIALISTS
-            </div>
-
-            <div class="text-slate-500 text-xs tracking-widest uppercase font-medium">
-                Established 2008
-            </div>
+            <div class="text-slate-600 text-[10px] uppercase tracking-[0.5em] font-bold mb-4">© 2024 PRECISION SYSTEMS INC // ARCHITECTURAL DRAFTING SPECIALISTS</div>
+            <div class="text-slate-700 text-xs tracking-[0.2em] uppercase font-medium">Established 2008 • Global AEC Outsourcing Partner</div>
         </div>
     </footer>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100');
-                    entry.target.classList.remove('translate-y-10');
-                }
-            });
-        }, { threshold: 0.1 });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('opacity-100'); entry.target.classList.remove('translate-y-10'); } }); }, { threshold: 0.1 });
+        document.querySelectorAll('section').forEach(section => { section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10'); observer.observe(section); });
 
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-            observer.observe(section);
-        });
-
-        // Interactive RTL Swipe/Slider
         const slider = document.getElementById('pivotSlider');
         const layer3d = document.getElementById('layer3d');
         const line = document.getElementById('sliderLine');
@@ -364,14 +289,7 @@
 
         const updateSwipe = (e) => {
             const rect = slider.getBoundingClientRect();
-            let x = 0;
-            if (e.clientX) {
-                x = e.clientX - rect.left;
-            } else if (e.touches && e.touches[0]) {
-                x = e.touches[0].clientX - rect.left;
-            } else {
-                return;
-            }
+            let x = e.clientX ? e.clientX - rect.left : (e.touches ? e.touches[0].clientX - rect.left : 0);
             x = Math.max(0, Math.min(x, rect.width));
             const percentage = (x / rect.width) * 100;
             layer3d.style.clipPath = `inset(0 0 0 ${percentage}%)`;
@@ -381,22 +299,11 @@
 
         slider.addEventListener('mousemove', updateSwipe);
         slider.addEventListener('touchmove', updateSwipe, { passive: true });
-        
-        window.addEventListener('load', () => {
+        window.addEventListener('load', () => { 
             const rect = slider.getBoundingClientRect();
-            const initialX = rect.left + (rect.width * 0.6); 
-            updateSwipe({ clientX: initialX });
+            updateSwipe({ clientX: rect.left + (rect.width * 0.5) }); 
         });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) target.scrollIntoView({ behavior: 'smooth' }); }); });
     </script>
 </body>
 </html>
