@@ -1,3 +1,77 @@
+# ============================================
+# ROBOTS.TXT - ARCHITECTURAL DRAFTING SERVICES
+# Website: architectural-drafting-services.pages.dev
+# Created: June 2026
+# SEO Standard: 2025-2026 Best Practices
+# ============================================
+
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /*?utm_source=*
+Disallow: /*?utm_medium=*
+Disallow: /*?utm_campaign=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?page=*
+Disallow: /search/
+Disallow: /*?s=*
+Disallow: *.pdf$
+Disallow: *.zip$
+Disallow: *.exe$
+Disallow: /page/2/
+Disallow: /page/3/
+Disallow: /page/4/
+
+Allow: /index.html
+Allow: /blog/
+Allow: /services/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+Crawl-delay: 1
+Request-rate: 12/1s
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /*?utm_source=*
+Disallow: /*?page=*
+Crawl-delay: 0
+Request-rate: 30/1s
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 1
+Request-rate: 15/1s
+
+# Block AI Training Bots (2026 Practice)
+User-agent: GPTBot
+User-agent: CCBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: PerplexityBot
+Disallow: /
+
+# Block Content Scrapers
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+Disallow: /
+
+# Allow Social Media Crawlers
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps
 Sitemap: https://architectural-drafting-services.pages.dev/sitemap.xml
