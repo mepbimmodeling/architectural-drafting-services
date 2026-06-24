@@ -3,7 +3,7 @@
   <!-- Main Homepage -->
   <url>
     <loc>https://architectural-drafting-services.pages.dev/</loc>
-    <lastmod>2024-10-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,16 +11,24 @@
   <!-- Blog Listing Page -->
   <url>
     <loc>https://architectural-drafting-services.pages.dev/blog.html</loc>
-    <lastmod>2024-10-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
   
   <!-- Individual Blog Post -->
   <url>
     <loc>https://architectural-drafting-services.pages.dev/why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html</loc>
-    <lastmod>2024-10-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+
+<url>
+    <loc>https://architectural-drafting-services.pages.dev/blog/2d-drafting-vs-3d-bim-services</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
