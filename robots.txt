@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://architectural-drafting-services.pages.dev/sitemap.xml

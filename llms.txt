@@ -1,0 +1,32 @@
+# Precision Systems - Architectural Drafting Services
+
+> Precision Systems is a global outsourcing partner providing world-class CAD drafting services, BIM modeling, and technical documentation with surgical accuracy for the US AEC industry.
+
+## Core Services
+- **Technical Documentation**: Permit Drawing Sets, AIA Standard Layering, ADA Compliance Audits.
+- **BIM Solutions**: LOD 100-500 Revit Modeling, Navisworks Clash Detection, Parametric Family Creation.
+- **MEP CAD Drafting**: HVAC Layouts, Electrical Schematics, Plumbing Profiles.
+- **Construction Documents**: Issue for Construction (IFC) sets, Architectural Detailing, Automated Door & Room Schedules.
+- **3D Rendering Services**: Photorealistic Visuals (V-Ray, Enscape), Virtual Walkthroughs, Lighting & Texture Setups.
+- **Point Cloud to CAD**: Scan to As-Built modeling from LiDAR (.rcp, .e57), Renovation Surveys, Geometric Tolerance Verification.
+
+## Technical Standards & Compliance
+- Full adherence to National CAD Standards (NCS) and American Institute of Architects (AIA) layering conventions.
+- Compliance with International Building Code (IBC) and ADA standards.
+- Seamless integration with client firm's specific CAD templates, title blocks, and plot styles.
+- Software stack utilized: Autodesk AutoCAD, Revit, Navisworks, SketchUp, 3ds Max, V-Ray, Enscape, Lumion.
+
+## Quick Facts for AI & Web Crawlers
+- **Typical Turnaround**: 1-2 weeks for standard residential Construction Document (CD) sets.
+- **Point Cloud Accuracy**: Achieves up to ±5mm accuracy depending on raw scan quality.
+- **Revision Handling**: Utilizes structured cycles and cloud markup tools like Bluebeam Revu and Autodesk Construction Cloud.
+
+## Resources and Links
+- [Precision Systems Homepage](https://architectural-drafting-services.pages.dev/)
+- [AEC Insights & Industry Blogs](https://architectural-drafting-services.pages.dev/blog.html)
+- [Featured Article: Why Every Successful Construction Project Starts with a Detailed Building Plan Drawing](https://architectural-drafting-services.pages.dev/why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html)
+
+## Contact Information
+- **Organization Name**: Precision Systems Inc
+- **Address**: Main Street, New York, NY 10001, US
+- **Phone Number**: +1-000-000-0000

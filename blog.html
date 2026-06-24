@@ -156,52 +156,91 @@
     </header>
 
     <!-- MAIN CONTENT - Blog Grid -->
-    <main class="px-6 md:px-16 pb-32 max-w-screen-xl mx-auto">
+    <main class="px-6 md:px-16 pb-32 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Exactly 1 Featured Article Card -->
-        <article class="relative glass-card rounded-2xl overflow-hidden group border border-white/10 hover:border-[#ff9922]/50 transition-all duration-500 shadow-2xl shadow-black/50">
-            <div class="flex flex-col lg:flex-row">
+        <!-- Featured Article Card 1 -->
+        <article class="relative glass-card rounded-2xl overflow-hidden group border border-white/10 hover:border-[#ff9922]/50 transition-all duration-500 shadow-2xl shadow-black/50 flex flex-col h-full">
+            <!-- Image Container -->
+            <div class="w-full aspect-[16/9] relative overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&fm=webp&q=80&w=1200" 
+                     alt="Architectural blueprints laid out on a desk" 
+                     title="Detailed architectural drafting plans"
+                     width="800" height="450"
+                     class="w-full h-full object-cover filter brightness-75 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
                 
-                <!-- Image Container -->
-                <div class="w-full lg:w-3/5 aspect-video lg:aspect-auto relative overflow-hidden bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&fm=webp&q=80&w=1200" 
-                         alt="Architectural blueprints laid out on a desk" 
-                         title="Detailed architectural drafting plans"
-                         width="1200" height="800"
-                         class="w-full h-full object-cover filter brightness-75 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
-                    
-                    <!-- Category Badge -->
-                    <div class="absolute top-6 left-6 bg-[#ff9922] text-black px-4 py-1.5 text-xs font-black uppercase tracking-widest shadow-lg">
-                        Construction Documentation
-                    </div>
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4 bg-[#ff9922] text-black px-3 py-1 text-[10px] font-black uppercase tracking-widest shadow-lg">
+                    Construction Documentation
+                </div>
+            </div>
+            
+            <!-- Content Container -->
+            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                    <span>October 25, 2024</span>
+                    <span class="w-1 h-1 bg-[#ff9922] rounded-full"></span>
+                    <span>12 Min Read</span>
                 </div>
                 
-                <!-- Content Container -->
-                <div class="w-full lg:w-2/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
-                    <div class="flex items-center gap-4 mb-6 text-xs font-bold uppercase tracking-widest text-slate-500">
-                        <span>October 25, 2024</span>
-                        <span class="w-1 h-1 bg-[#ff9922] rounded-full"></span>
-                        <span>12 Min Read</span>
-                    </div>
-                    
-                    <h2 class="text-3xl md:text-4xl font-black font-heading text-white mb-6 group-hover:text-[#ff9922] transition-colors leading-tight">
-                        <a href="https://architectural-drafting-services.pages.dev/why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html" title="Read full article: Why Every Successful Construction Project Starts with a Detailed Building Plan Drawing" class="focus:outline-none">
-                            <span class="absolute inset-0" aria-hidden="true"></span>
-                            Why Every Successful Construction Project Starts with a Detailed Building Plan Drawing
-                        </a>
-                    </h2>
-                    
-                    <p class="text-slate-400 mb-10 line-clamp-4 leading-relaxed text-lg">
-                        In construction, critical issues and budget blowouts do not just appear out of thin air; they are almost always concealed in poor preliminary documentation, rushed design phases, or a lack of coordination among different disciplines.
-                    </p>
-                    
-                    <div class="mt-auto relative z-10">
-                        <a href="https://architectural-drafting-services.pages.dev/why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html" title="Read full article" class="text-[#ff9922] text-sm font-black uppercase tracking-[0.2em] group-hover:translate-x-3 transition-transform inline-flex items-center gap-3">
-                            Read Article <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+                <h2 class="text-2xl font-black font-heading text-white mb-4 group-hover:text-[#ff9922] transition-colors leading-tight">
+                    <a href="why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html" title="Read full article: Why Every Successful Construction Project Starts with a Detailed Building Plan Drawing" class="focus:outline-none">
+                        <span class="absolute inset-0" aria-hidden="true"></span>
+                        Why Every Successful Construction Project Starts with a Detailed Building Plan Drawing
+                    </a>
+                </h2>
+                
+                <p class="text-slate-400 mb-6 line-clamp-3 text-sm leading-relaxed">
+                    In construction, critical issues and budget blowouts do not just appear out of thin air; they are almost always concealed in poor preliminary documentation, rushed design phases, or a lack of coordination.
+                </p>
+                
+                <div class="mt-auto pt-4 border-t border-white/5 relative z-10">
+                    <a href="why-every-successful-construction-project-starts-with-a-detailed-building-plan-drawing.html" title="Read full article" class="text-[#ff9922] text-[11px] font-black uppercase tracking-[0.2em] group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
+                        Read Article <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
+            </div>
+        </article>
 
+        <!-- Featured Article Card 2 -->
+        <article class="relative glass-card rounded-2xl overflow-hidden group border border-white/10 hover:border-[#ff9922]/50 transition-all duration-500 shadow-2xl shadow-black/50 flex flex-col h-full">
+            <!-- Image Container -->
+            <div class="w-full aspect-[16/9] relative overflow-hidden bg-slate-900">
+                <img src="./images/blog-banner.jpg" 
+                     alt="2D Drafting vs 3D BIM Services" 
+                     title="2D vs 3D BIM Comparison"
+                     width="800" height="450"
+                     class="w-full h-full object-cover filter brightness-75 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4 bg-[#ff9922] text-black px-3 py-1 text-[10px] font-black uppercase tracking-widest shadow-lg">
+                    Methodology
+                </div>
+            </div>
+            
+            <!-- Content Container -->
+            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                    <span>November 15, 2024</span>
+                    <span class="w-1 h-1 bg-[#ff9922] rounded-full"></span>
+                    <span>8 Min Read</span>
+                </div>
+                
+                <h2 class="text-2xl font-black font-heading text-white mb-4 group-hover:text-[#ff9922] transition-colors leading-tight">
+                    <a href="blog/2d-drafting-vs-3d-bim-services.html" title="Read full article: 2D Drafting vs 3D BIM Services" class="focus:outline-none">
+                        <span class="absolute inset-0" aria-hidden="true"></span>
+                        2D Drafting vs 3D BIM Services: A Comprehensive Breakdown
+                    </a>
+                </h2>
+                
+                <p class="text-slate-400 mb-6 line-clamp-3 text-sm leading-relaxed">
+                    The choice between 2D drafting and 3D BIM services isn't about what's "better"—it's about what's right for your practice at this moment. Discover why architects still love 2D, why firms are switching to BIM, and how a hybrid approach is winning.
+                </p>
+                
+                <div class="mt-auto pt-4 border-t border-white/5 relative z-10">
+                    <a href="blog/2d-drafting-vs-3d-bim-services.html" title="Read full article" class="text-[#ff9922] text-[11px] font-black uppercase tracking-[0.2em] group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
+                        Read Article <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </article>
 
